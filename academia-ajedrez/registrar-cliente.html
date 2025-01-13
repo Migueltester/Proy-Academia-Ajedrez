@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrar Cliente</title>
+
+    <!-- Añade un icono a la página HTML -->
+    <link rel="icon" href="img/icons/chess_40dp_FILL0_wght400_GRAD0_opsz40.svg" type="image/x-icon" />
+
+    <!-- Importar fuente Inter de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+    <link rel="preload" href="styles/styles.css" as="style" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header id="reg_cl-header">
+      <div class="contenedor_logo">
+        <img src="img\icons\ACADEMIA.svg" class="logo">
+      </div>
+      <h1 id="log_h1">Academia de Ajedrez</h1>
+    </header>
+
+    <main>
+      <div class="reg_text">
+        <h2 class="ind_h2 reg_cl-h2">Registro del cliente</h2>
+      </div>
+
+      <section id="reg-cl_section" class="reg-cl_container">
+        <div class="text">
+          <h3 class="reg_cl-h3">Nombre completo:</h3>
+          <h3 class="reg_cl-h3">Cédula:</h3>
+          <h3 class="reg_cl-h3">Edad:</h3>
+          <h3 class="reg_cl-h3">Lugar de residencia:</h3>
+          <h3 class="reg_cl-h3">Teléfono:</h3>
+          <h3 class="reg_cl-h3">Correo electrónico:</h3>
+          <h3 class="reg_cl-h3">Nivel:</h3>
+        </div>
+        <div class="form">
+          <form action="#">
+            <div class="text-field">
+              <input type="text" placeholder="Nombre completo" />
+            </div>
+            <div class="text-field">
+              <input type="text" placeholder="Cédula" />
+            </div>
+            <div class="text-field">
+              <input type="number" placeholder="Edad" />
+            </div>
+            <div class="text-field">
+              <input type="text" placeholder="Lugar de residencia" />
+            </div>
+            <div class="text-field">
+              <input type="tel" placeholder="Teléfono" />
+            </div>
+            <div class="text-field">
+              <input type="email" placeholder="Correo electrónico" />
+            </div>
+            <div class="text-field">
+              <select name="Escoge tu nivel" id="nivel">
+                <option value="" selected disabled>Escoje tu nivel</option>
+                <option value="J">Clase J</option>
+                <option value="I">Clase I</option>
+                <option value="H">Clase H</option>
+                <option value="G">Clase G</option>
+                <option value="F">Clase F</option>
+                <option value="L">Clase A</option>
+                <option value="M">Experto</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <div class="sub_box">
+        <button type="submit" class="boton">Registrar</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="foot_back">
+        <!--Volver button-->
+        <a href="registrar.html">
+          <div class="small-card logout ind_div">
+            <img src="img/icons/arrow_back_ios_40dp_FILL0_wght600_GRAD0_opsz40.svg" alt="" />
+            <h2 class="reg_cl-h2" style="margin: 20px 15px">Regresar</h2>
+          </div>
+        </a>
+
+        <!--LOGOUT button-->
+        <a href="index.html">
+          <div class="small-card logout ind_div">
+            <img src="img/icons/home_40dp_FILL0_wght400_GRAD0_opsz40.svg" alt="" />
+            <h2 class="reg_cl-h2" style="margin: 20px 15px">Volver al home</h2>
+          </div>
+        </a>
+      </div>
+
+      <!-- INFORMACION LOGIN  -->
+      <ul class="ind_ul">
+        <li class="ind_li">Sesión iniciada como:</li>
+        <li class="ind_li">
+          <img src="img/icons/shield_person_48dp_FILL0_wght400_GRAD0_opsz48.svg" alt="Admin Icon" />
+          Administrador
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

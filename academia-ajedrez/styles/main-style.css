@@ -1,0 +1,147 @@
+/* CONTENIDO CSS PARA TODAS LAS PAGINAS */
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  /* Contenedor flex */
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+
+  /* Atributos para ajustar la imagen/fondo */
+  background-color: #292826;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  font-family: Inter, "Courier New", Courier, monospace;
+}
+
+header {
+  padding-top: 20px;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+/* FIN CONTENIDO CSS PARA TODAS LAS PAGINAS */
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: #d9d9d9;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #d9d9d9;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+/* Texto de los cuadros */
+div h2 {
+  color: #292826;
+  font-weight: 800;
+}
+
+/* TEXTO HOME + CUADROS */
+.seccion-general {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* CUADROS PRINCIPALES */
+.card {
+  background-color: #d9d9d9;
+  padding: 80px 70px 50px 70px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  margin: 10px 0px;
+}
+
+.card:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.1);
+}
+
+.seccion-torneo {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* CUADRO PEQUEÑO (TORNEOS) */
+.small-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #d9d9d9;
+  padding: 0px 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  margin: 30px 10px;
+}
+
+.small-card:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.1);
+}
+
+/* Para centrar elementos (imagenes) */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* AGRANDAR (upscale) Y ACHICAR (downscale) IMAGEN */
+.upsc {
+  scale: 2;
+}
+
+.downsc {
+  scale: 0.7;
+}
+
+/* Lista del footer */
+ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0;
+}
+
+li {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+li img {
+  margin-right: 10px;
+  vertical-align: middle; /* Alinea la imagen verticalmente */
+}
+
+a {
+  text-decoration: none;
+}
